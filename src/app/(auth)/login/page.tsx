@@ -3,7 +3,7 @@ import broImage from '../../../../public/assets/images/bro.png';
 import { Input } from '@/components/ui/input';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
-import { FaFacebook } from 'react-icons/fa';
+import IconsSocial from '@/components/features/icons-social/icons-social';
 export default function Page() {
   return (
     <main className="flex min-h-screen max-h-screen items-center h-screen gap-32">
@@ -38,31 +38,40 @@ export default function Page() {
           {/* Sign in */}
           <section className="sign-in mb-8">
             {/* Inputs */}
-            <div className="mb-10">
+            <div className="space-y-8 mb-10">
               {/* Title */}
-              <h2 className="font-bold text-2xl mb-2">Sign in</h2>
+              <h2 className="font-bold text-2xl">Sign in</h2>
 
               {/* Email */}
-              <div className="email mb-8">
+              <div className="email">
+                {/* Input */}
                 <Input type="email" placeholder="Email" />
               </div>
 
               {/* Password */}
-              <div className="password mb-4">
-                <Input type="password" placeholder="Password" />
-              </div>
+              <div className="password">
+                {/* Input */}
+                <Input
+                  className="mb-4"
+                  type="password"
+                  placeholder="Password"
+                />
 
-              {/* Link */}
-              <Link
-                className="text-base text-end block text-hiro"
-                href={'/forgetpassword'}
-              >
-                Recover Password ?
-              </Link>
+                {/* Link */}
+                <Link
+                  className="text-base text-end block text-hiro"
+                  href={'/forgetpassword'}
+                >
+                  Recover Password ?
+                </Link>
+              </div>
             </div>
 
             {/* Button*/}
-            <Button type="submit" className="w-full">
+            <Button
+              type="submit"
+              className="w-full shadow-primary-shadow rounded-[20px]"
+            >
               Sign in
             </Button>
           </section>
@@ -73,13 +82,7 @@ export default function Page() {
             <p className="continue-with mb-8">Or Continue with</p>
 
             {/* Icons */}
-            <ul>
-              <li className="w-16 h-16 bg-white shadow-primary-shadow border-[1px] rounded-2xl flex items-center justify-center">
-                <a href="" target="_blank">
-                  <FaFacebook className="text-2xl text-[#1877F2]" />
-                </a>
-              </li>
-            </ul>
+            <IconsSocial />
           </section>
         </form>
       </section>

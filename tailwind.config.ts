@@ -11,7 +11,7 @@ const config: Config = {
     extend: {
       boxShadow: {
         'custom-section': '0px 5px 100px 0px #0000001A',
-        'primary-shadow': '0px 18.45px 30.75px 0px #4461F21C',
+        'primary-shadow': '0px 18px 30px 0px #4461F21C',
       },
       colors: {
         hiro: '#4461F2',
