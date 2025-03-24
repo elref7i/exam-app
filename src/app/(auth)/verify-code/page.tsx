@@ -3,7 +3,6 @@ import { Button } from '@/components/ui/button';
 import LeftAuth from '@/components/features/left-auth/left-auth';
 import ContinueWith from '@/components/features/continue/continue-with';
 import HeaderAuth from '@/components/layout/nav-auth';
-import Link from 'next/link';
 
 export default function Page() {
   return (
@@ -35,10 +34,13 @@ export default function Page() {
                 <p className="text-end text-base">
                   Didn’t receive a code?
                   {/* Link */}
-                  <span className="pl-1">
-                    <Link className="text-hiro" href={'/forgot-password'}>
+                  <span>
+                    <Button
+                      variant={'ghost'}
+                      className="px-1 hover:bg-transparent"
+                    >
                       Resend
-                    </Link>
+                    </Button>
                   </span>
                 </p>
               </div>

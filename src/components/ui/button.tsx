@@ -16,7 +16,7 @@ const buttonVariants = cva(
           'rounded-2xl text-xl text-hiro border border-input bg-background hover:bg-accent',
         secondary:
           'bg-secondary text-secondary-foreground hover:bg-secondary/80',
-        ghost: 'text-xl text-hiro font-bold hover:bg-accent',
+        ghost: 'text-hiro hover:bg-accent',
         link: 'text-primary underline-offset-4 hover:underline',
       },
       size: {

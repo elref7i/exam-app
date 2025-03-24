@@ -21,7 +21,7 @@ export default function HeaderAuth() {
       <SelectLanguage />
 
       {/* Button */}
-      <Button variant="ghost">
+      <Button variant="ghost" className="font-bold text-xl">
         <Link href={'/login'}>Sign in</Link>
       </Button>
 
