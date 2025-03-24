@@ -4,7 +4,7 @@ import broImage from '../../../../public/assets/images/bro.png';
 
 export default function LeftAuth() {
   return (
-    <section className="left-auth shadow-custom-section pt-16 pl-20 bg-[#F0F4FC] rounded-r-[100px] w-[708px] h-full">
+    <section className="left-auth shadow-custom-section pt-16 pl-20 bg-[#F0F4FC] rounded-r-[100px] w-[600px] h-full">
       <div className="w-[482px]">
         {/* Header */}
         <header className="pb-16">
