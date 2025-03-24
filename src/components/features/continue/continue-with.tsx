@@ -20,7 +20,7 @@ export default function ContinueWith() {
   return (
     <section className="or-continue text-center">
       {/* Title */}
-      <p className="continue-with mb-8">Or Continue with</p>
+      <p className="continue-with mb-6">Or Continue with</p>
       {/* Icons */}
       <ul className="flex justify-center items-center gap-8">
         {/* Icon Google */}

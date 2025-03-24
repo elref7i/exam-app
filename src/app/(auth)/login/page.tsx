@@ -21,21 +21,19 @@ export default function Page() {
           {/* Sign in */}
           <section className="sign-in mb-8">
             {/* Inputs */}
-            <div className="space-y-8 mb-10">
+            <div className="space-y-3  mb-8">
               {/* Title */}
               <h2 className="font-bold text-2xl">Sign in</h2>
 
               {/* Email */}
               <div className="email">
-                {/* Input */}
                 <Input type="email" placeholder="Email" />
               </div>
 
               {/* Password */}
               <div className="password">
-                {/* Input */}
                 <Input
-                  className="mb-4"
+                  className="mb-2"
                   type="password"
                   placeholder="Password"
                 />

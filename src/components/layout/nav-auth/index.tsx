@@ -16,7 +16,7 @@ import SelectLanguage from './components/select-language';
 
 export default function HeaderAuth() {
   return (
-    <nav className="flex fixed top-10 right-20  justify-end items-center space-x-2">
+    <nav className="flex fixed top-5 right-10  justify-end items-center space-x-2">
       {/* Select */}
       <SelectLanguage />
 
