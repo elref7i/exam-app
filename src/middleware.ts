@@ -1,13 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 
-const privatePages = ['/'];
-const authPages = [
-  '/login',
-  '/register',
-  '/forgot-password',
-  '/verfiy-code',
-  '/set-password',
-];
+const privatePages: string[] = ['/'];
+
 export default function middleware(req: NextRequest) {
   const token = false;
   if (privatePages.includes(req.nextUrl.pathname)) {
