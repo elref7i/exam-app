@@ -1,5 +1,4 @@
 import { Input } from '@/components/ui/input';
-import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import LeftAuth from '@/components/features/left-auth/left-auth';
 import ContinueWith from '@/components/features/continue/continue-with';
