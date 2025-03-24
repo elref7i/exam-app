@@ -1,4 +1,5 @@
 import { Input } from '@/components/ui/input';
+import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import LeftAuth from '@/components/features/left-auth/left-auth';
 import ContinueWith from '@/components/features/continue/continue-with';
@@ -22,38 +23,25 @@ export default function Page() {
             {/* Inputs */}
             <div className="space-y-3  mb-8">
               {/* Title */}
-              <h2 className="font-bold text-2xl">Verfiy Code</h2>
+              <h2 className="font-bold text-2xl">Set a Password</h2>
 
-              {/* Verfiy code */}
-              <div className="code">
-                {/* Input */}
-                <Input
-                  className="mb-2"
-                  type="number"
-                  placeholder="Enter Code"
-                />
+              {/* Password */}
+              <div className="password">
+                <Input type="password" placeholder="Password" />
+              </div>
 
-                {/* Receive */}
-                <p className="text-end text-base">
-                  Didn’t receive a code?
-                  <span>
-                    <Button
-                      variant={'ghost'}
-                      className="px-1 hover:bg-transparent"
-                    >
-                      Resend
-                    </Button>
-                  </span>
-                </p>
+              {/* Confirm password */}
+              <div className="confirm-password">
+                <Input type="password" placeholder="Confirm Password" />
               </div>
             </div>
 
-            {/* Button*/}
+            {/* Button */}
             <Button
               type="submit"
               className="w-full h-14 shadow-primary-shadow rounded-[20px]"
             >
-              Verify
+              Set Change
             </Button>
           </section>
 

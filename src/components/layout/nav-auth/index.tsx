@@ -26,7 +26,7 @@ export default function HeaderAuth() {
       </Button>
 
       {/* Button */}
-      <Button variant="outline">
+      <Button variant="outline" className="shadow-primary-shadow">
         <Link href={'/register'}>Register</Link>
       </Button>
     </nav>
