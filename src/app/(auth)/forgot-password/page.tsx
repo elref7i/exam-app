@@ -1,5 +1,4 @@
 import { Input } from '@/components/ui/input';
-import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import LeftAuth from '@/components/features/left-auth/left-auth';
 import ContinueWith from '@/components/features/continue/continue-with';
@@ -23,37 +22,20 @@ export default function Page() {
             {/* Inputs */}
             <div className="space-y-3  mb-8">
               {/* Title */}
-              <h2 className="font-bold text-2xl">Sign in</h2>
+              <h2 className="font-bold text-2xl">Forgot your password?</h2>
 
               {/* Email */}
               <div className="email">
-                <Input type="email" placeholder="Email" />
-              </div>
-
-              {/* Password */}
-              <div className="password">
-                <Input
-                  className="mb-2"
-                  type="password"
-                  placeholder="Password"
-                />
-
-                {/* Link */}
-                <Link
-                  className="text-base text-end block text-hiro"
-                  href={'/forgot-password'}
-                >
-                  Recover Password ?
-                </Link>
+                <Input type="email" placeholder="Enter Email" />
               </div>
             </div>
 
-            {/* Button */}
+            {/* Button*/}
             <Button
               type="submit"
               className="w-full h-14 shadow-primary-shadow rounded-[20px]"
             >
-              Sign in
+              Send
             </Button>
           </section>
 

@@ -1,5 +1,4 @@
 import { Input } from '@/components/ui/input';
-import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import LeftAuth from '@/components/features/left-auth/left-auth';
 import ContinueWith from '@/components/features/continue/continue-with';
@@ -52,14 +51,6 @@ export default function Page() {
                   type="password"
                   placeholder="Confirm Password"
                 />
-
-                {/* Link */}
-                <Link
-                  className="text-base text-end block text-hiro"
-                  href={'/forgetpassword'}
-                >
-                  Recover Password ?
-                </Link>
               </div>
             </div>
 
