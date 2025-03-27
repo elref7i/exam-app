@@ -6,8 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "preinstall": "rm -f yarn.lock"
+    "lint": "next lint"
   },
   "dependencies": {
     "@radix-ui/react-select": "^2.1.6",
