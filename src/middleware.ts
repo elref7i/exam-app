@@ -8,7 +8,9 @@ export default function middleware(req: NextRequest) {
     if (token) {
       return NextResponse.next();
     }
-    return NextResponse.redirect(`${process.env.NEXTAUTH_URL}/auth/login`);
+    return NextResponse.redirect(
+      `${process.env.NEXT_PUBLIC_NEXTAUTH_URL}/auth/login`
+    );
   }
   return NextResponse.next();
 }
