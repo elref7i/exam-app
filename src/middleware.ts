@@ -8,7 +8,7 @@ export default function middleware(req: NextRequest) {
     if (token) {
       return NextResponse.next();
     }
-    return NextResponse.redirect(`http://localhost:3000/auth/login`);
+    return NextResponse.redirect(`${process.env.NEXTAUTH_URL}/auth/login`);
   }
   return NextResponse.next();
 }
