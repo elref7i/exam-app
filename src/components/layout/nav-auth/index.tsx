@@ -22,12 +22,12 @@ export default function HeaderAuth() {
 
       {/* Button */}
       <Button variant="ghost" className="font-bold text-xl">
-        <Link href={'/login'}>Sign in</Link>
+        <Link href={'/auth/login'}>Sign in</Link>
       </Button>
 
       {/* Button */}
       <Button variant="outline" className="shadow-primary-shadow">
-        <Link href={'/register'}>Register</Link>
+        <Link href={'/auth/register'}>Register</Link>
       </Button>
     </nav>
   );
